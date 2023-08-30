@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="header">
+        <img
+          id="logo"
+          src="./imgs/bookshelf.png"
+          alt="Bookshelf illustration"
+          srcset=""
+        />
+        <h1>Bookshelf</h1>
+      </div>
+      <div class="main-content"></div>
+      <button id="show-book-info-form">
+        <img src="./imgs/add.svg" alt="Add book to bookshelf" srcset="" />
+      </button>
+
+      <form class="enter-book-info-form hidden" action="">
+        <label for="book-name">Book name</label>
+        <input type="text" name="book_name" id="book-name" required />
+
+        <label for="author">Author</label>
+        <input type="text" name="author" id="author" required />
+
+        <label for="pages">Number of pages</label>
+        <input
+          type="number"
+          name="pages"
+          id="pages"
+          min="1"
+          max="3000"
+          step="1"
+          required
+        />
+
+        <label for="already-read">
+          I already read
+          <input type="checkbox" name="already_read" id="already-read" />
+        </label>
+        <button id="add-book-btn" type="submit">ADD</button>
+      </form>
+    </div>
+  </body>
+</html>
